@@ -62,9 +62,15 @@
     <dependency>
       <groupId>io.swagger</groupId>
       <artifactId>swagger-jersey2-jaxrs</artifactId>
-      <version>1.5.0</version>
+      <version>1.5.4</version>
     </dependency>
-    
+    <!-- poi -->
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml</artifactId>
+      <version>3.10-FINAL</version>
+      <type>jar</type>
+    </dependency>
   </dependencies>
 
   <build>

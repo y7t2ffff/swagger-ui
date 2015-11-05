@@ -21,6 +21,7 @@ public class APIService extends ResourceConfig {
     packages("com.nani.api");
     //須註冊這個才可以上傳檔案
     register(MultiPartFeature.class);
+//    register(CharsetResponseFilter.class);
     //swagger
     Set<Class<?>> resources = new HashSet<>();
     resources.add(io.swagger.jaxrs.listing.ApiListingResource.class);
