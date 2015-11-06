@@ -7,6 +7,8 @@ package com.nani.api;
 
 import com.nani.common.Xlsx;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
@@ -125,10 +127,13 @@ public class Book {
   @ApiResponses(value = {
     @ApiResponse(code = 200, message = "完成")
   })
+  @ApiImplicitParams({
+    @ApiImplicitParam(name = "file", value = "Xlsx檔案" ,  required = true, dataType = "file", paramType = "form")
+ })
   @Consumes(MediaType.MULTIPART_FORM_DATA)
   @Produces(MediaType.APPLICATION_JSON)
   public String Books2(
-          @ApiParam(value = "XLSX檔案", required = true) FormDataMultiPart formData
+          @ApiParam(value = "XLSX檔案", required = true ,hidden = true) FormDataMultiPart formData          
   ) {
     JSONObject jMain = new JSONObject();
     String Status = "";

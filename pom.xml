@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.nani</groupId>
-  <artifactId>etjhs_public_api</artifactId>
+  <artifactId>jersey_swagger_sample</artifactId>
   <version>1.0</version>
   <packaging>war</packaging>
 
-  <name>etjhs_public_api</name>
+  <name>jersey_swagger_sample</name>
 
   <properties>
     <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
